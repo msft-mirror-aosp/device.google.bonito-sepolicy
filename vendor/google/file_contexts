@@ -1,5 +1,6 @@
 # dev nodes
 /dev/citadel0                                                               u:object_r:citadel_device:s0
+/dev/access-kregistry                                                       u:object_r:rebootescrow_device:s0
 /dev/access-metadata                                                        u:object_r:ramoops_device:s0
 /dev/access-ramoops                                                         u:object_r:ramoops_device:s0
 
@@ -18,6 +19,7 @@
 /vendor/bin/perfstatsd                                                      u:object_r:perfstatsd_exec:s0
 /vendor/bin/init\.firstboot\.sh                                             u:object_r:init-firstboot_exec:s0
 /vendor/bin/init\.fingerprint\.sh                                           u:object_r:init-fingerprint_exec:s0
+/vendor/bin/thermal_logd                                                    u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/ramoops                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/init\.ramoops\.sh                                               u:object_r:ramoops_exec:s0
 /vendor/bin/pixelstats-vendor                                               u:object_r:pixelstats_vendor_exec:s0

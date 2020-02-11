@@ -4,7 +4,7 @@ persist.camera.            u:object_r:vendor_camera_prop:s0
 persist.vendor.sys.cnd     u:object_r:cnd_prop:s0
 ro.boot.sota               u:object_r:factory_ota_prop:s0
 persist.factoryota.reboot  u:object_r:exported_system_prop:s0
-persist.radio.bootwithlpm  u:object_r:exported_system_prop:s0
+persist.vendor.radio.bootwithlpm  u:object_r:vendor_radio_prop:s0
 vendor.ims.                u:object_r:ims_prop:s0
 persist.vendor.ims.        u:object_r:ims_prop:s0
 persist.net.doxlat         u:object_r:vendor_net_radio_prop:s0
@@ -185,6 +185,7 @@ persist.vendor.service.bdroid.sibs      u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.snooplog  u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.soclog    u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.ssrlvl    u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bt.soc.scram_freqs       u:object_r:vendor_bluetooth_prop:s0
 ro.vendor.bluetooth.emb_wp_mode         u:object_r:vendor_bluetooth_prop:s0
 ro.vendor.bluetooth.wipower             u:object_r:vendor_bluetooth_prop:s0
 
