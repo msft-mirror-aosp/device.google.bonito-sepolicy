@@ -29,6 +29,7 @@ type sysfs_pinctrl, fs_type, sysfs_type;
 type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_wlc, sysfs_type, fs_type;
 type sysfs_esim, sysfs_type, fs_type;
+type sysfs_wifi_conmode, sysfs_type, fs_type;
 
 type debugfs_clk, debugfs_type, fs_type;
 type debugfs_ion, debugfs_type, fs_type;
@@ -102,7 +103,7 @@ type audio_vendor_data_file, file_type, data_file_type;
 type modem_fdr_file, file_type, data_file_type;
 type mediadrm_vendor_data_file, file_type, data_file_type;
 type data_qsee_file, file_type, data_file_type;
-type tcpdump_vendor_data_file, file_type, data_file_type;
+type tcpdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 
 type vendor_firmware_file, vendor_file_type, file_type;
 type firmware_file, fs_type, contextmount_type;
@@ -127,6 +128,9 @@ type adsprpcd_file, file_type, vendor_file_type;
 type proc_irq, fs_type, proc_type;
 type sysfs_irq, fs_type, sysfs_type;
 type irqbalance_socket, file_type;
+
+# grep
+type vendor_grep_exec, exec_type, vendor_file_type, file_type;
 
 allow rootfs labeledfs:filesystem associate;
 allow vendor_firmware_file self:filesystem associate;
